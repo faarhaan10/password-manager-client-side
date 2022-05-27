@@ -1,21 +1,22 @@
 import React from 'react';
+import logo from '../../logo.svg';
 import { Container } from 'react-bootstrap';
 
-const NotFound = () => {
+const Loading = () => {
     return (
-        <div className='custom-bg'>
+        <div>
             <Container >
                 <div style={{
-                    height: '90vh',
+                    height: '89vh',
                     width: '100%'
                 }}
                     className='d-grid justify-content-center align-items-center'
                 >
-                    <h2 className='fw-bold' style={{ color: 'red' }}>Not Found</h2>
+                    <img src={logo} className="App-logo" alt="logo" style={{ height: '30vmin' }} />
                 </div>
             </Container>
         </div>
     );
 };
 
-export default NotFound;
+export default Loading;
